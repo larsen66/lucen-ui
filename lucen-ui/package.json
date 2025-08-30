@@ -1,0 +1,13 @@
+{
+  "name": "lucen-ui-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd apps/components && pnpm dev",
+    "build": "cd apps/components && pnpm build",
+    "start": "cd apps/components && pnpm start",
+    "lint": "cd apps/components && pnpm lint",
+    "install:components": "cd apps/components && pnpm install"
+  },
+  "description": "LucenUI - Modern React component library workspace"
+}
