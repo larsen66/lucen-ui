@@ -41,17 +41,17 @@ const products: Product[] = [];
 
 const demos = [
   {
-    name: 'Interactive Components',
+    name: "Navigation",
     items: [
       {
-        slug: 'accordion-blur',
-        name: 'Blur Text Accordion',
-        description: 'Accordion with animated blur text effects and modern styling',
-      },
-    ],
-  },
+        slug: "accordion-blur",
+        name: "Accordion Blur",
+        description: "Accessible accordion showcasing subtle blur-to-clear text reveals with glassmorphism effects and smooth animations."
+      }
+    ]
+  }
 ] as const satisfies DemoCategory[];
 
-export type DemoSlug = (typeof demos)[number]['items'][number]['slug'];
+export type DemoSlug = string;
 
 export const data = { sections, categories, products, demos };
