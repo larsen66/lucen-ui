@@ -9,6 +9,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import AccordionBlurText from '#/components/accordions/AccordionBlurText';
+import { AccordionBento } from '#/components/accordions/AccordionBento';
 import { GridVignetteBackground } from '#/components/background/grid-vignette-background';
 
 // Компонент для блока кода с подсветкой синтаксиса и кнопкой копирования
@@ -273,10 +274,49 @@ Professional and visually appealing for any application.\`}
       >
         <Prose>
           <p style={{ fontFamily: 'Orbitron, "Space Grotesk", "Exo 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }} className="flex items-center gap-2">
-            Built using components from shadcn, davidhdev & ibelick. Thanks! 
+            Built using components from shadcn, davidhdev & ibelick. Thanks!
             <Sparkles className="w-4 h-4 text-white" />
           </p>
         </Prose>
+      </Boundary>
+
+      <Boundary
+        label="Bento Accordion"
+        animateRerendering={false}
+        kind="solid"
+      >
+        <TabGroup defaultValue="0">
+          <div className="flex items-center justify-between mb-4">
+            <TabList>
+              <Tab tabIndex="0">Preview</Tab>
+              <Tab tabIndex="1">Code</Tab>
+            </TabList>
+          </div>
+          <TabPanels>
+            <TabPanel tabIndex="0">
+              <div className="relative min-h-[600px] rounded-lg overflow-hidden">
+                <GridVignetteBackground className="absolute inset-0 z-0" />
+                <div className="relative z-10 p-4">
+                  <AccordionBento />
+                </div>
+              </div>
+            </TabPanel>
+            <TabPanel tabIndex="1">
+              <div className="relative min-h-[600px] rounded-lg overflow-hidden">
+                <GridVignetteBackground className="absolute inset-0 z-0" />
+                <div className="relative z-10 flex items-center justify-center p-8">
+                  <div className="text-center text-gray-500">
+                    <p className="text-lg font-medium mb-2">Code Preview</p>
+                    <p>Check the component file directly</p>
+                    <code className="block mt-4 p-4 bg-black/20 rounded text-sm">
+                      lucen-ui/apps/components/components/accordions/AccordionBento.tsx
+                    </code>
+                  </div>
+                </div>
+              </div>
+            </TabPanel>
+          </TabPanels>
+        </TabGroup>
       </Boundary>
     </div>
   );

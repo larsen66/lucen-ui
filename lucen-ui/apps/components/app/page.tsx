@@ -1,21 +1,12 @@
 import { data } from '#/app/_internal/_data';
 import { Boundary } from '#/ui/boundary';
 import { LinkStatus } from '#/ui/link-status';
-import TestTheme from '../test-theme';
 import Link from 'next/link';
 
 export default function Page() {
   const demos = data.demos;
   return (
     <div className="flex flex-col gap-9">
-      <Boundary
-        label="Theme Test"
-        animateRerendering={false}
-        kind="solid"
-      >
-        <TestTheme />
-      </Boundary>
-      
       <Boundary
         label="LucenUI Components"
         animateRerendering={false}
