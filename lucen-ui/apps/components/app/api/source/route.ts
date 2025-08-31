@@ -14,6 +14,7 @@ export async function GET(request: NextRequest) {
   const allowedPaths = [
     'components/accordions/AccordionBlurText.tsx',
     'components/accordions/AccordionBento.tsx',
+    'components/accordions/AccordionBorder.tsx',
     'components/ui/accordion.tsx'
   ];
 

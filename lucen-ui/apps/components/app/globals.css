@@ -48,6 +48,19 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Sky color variables for moving border effect */
+  --sky-50: oklch(98.1% 0.01 213);
+  --sky-100: oklch(94.1% 0.035 220);
+  --sky-200: oklch(89.4% 0.055 224);
+  --sky-300: oklch(82.2% 0.085 225);
+  --sky-400: oklch(72.9% 0.12 226);
+  --sky-500: oklch(64.3% 0.155 228);
+  --sky-600: oklch(56.7% 0.175 230);
+  --sky-700: oklch(49.8% 0.16 232);
+  --sky-800: oklch(44.1% 0.125 235);
+  --sky-900: oklch(39.4% 0.095 238);
+  --sky-950: oklch(26.5% 0.055 242);
 }
 
 :root {
