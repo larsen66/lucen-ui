@@ -3,7 +3,7 @@
 import * as React from "react"
 import { useRef, useEffect } from "react"
 import { gsap } from "gsap"
-import { Shield, Users, Sparkles } from 'lucide-react'
+import { Shield, Users, Sparkles, Heart } from 'lucide-react'
 import {
   Accordion,
   AccordionContent,
@@ -770,18 +770,21 @@ export function BentoAccordionCredits() {
       <div className="w-full max-w-xl">
         <div className="bg-white/95 dark:bg-gray-900/95 border border-gray-200 dark:border-gray-700 rounded-lg shadow-xl p-6 ring-1 ring-gray-300/30 dark:ring-gray-600/30 w-full">
           <div className="text-center">
-            <p 
-              style={{ 
-                fontFamily: 'Orbitron, "Space Grotesk", "Exo 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' 
-              }} 
+            <p
+              style={{
+                fontFamily: 'Orbitron, "Space Grotesk", "Exo 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+              }}
               className="flex items-center justify-center gap-2 text-gray-700 dark:text-gray-300"
             >
-              Built with components from shadcn, 21st.dev & community. Thanks!
-              <Sparkles className="w-4 h-4 text-yellow-500 dark:text-yellow-400" />
+
             </p>
           </div>
         </div>
       </div>
     </div>
   )
+}
+
+export default function AccordionBentoPreview() {
+  return <AccordionBento />
 }
